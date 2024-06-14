@@ -1,0 +1,18 @@
+* {box-sizing:border-box}
+
+/* Estilos para los slides */
+.mySlides {
+    display:none;
+    -webkit-animation:fade 1s;
+    animation:fade 1s
+}
+
+@-webkit-keyframes fade {
+    from {opacity:.4} 
+    to {opacity:1}
+}
+
+@keyframes fade {
+    from {opacity:.4} 
+    to {opacity:1}
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="IMAGENES/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="IMAGENES/trabajo1.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="IMAGENES/trabajo2.jpg">
+        </div>
+        <div class="mySlides">
+            <img src="IMAGENES/trabajo3.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Me llamo Santiago Morales. Soy de la provincia de Corrientes, nacido y criado en la misma. Soy una persona creativa y muy positivista. Me recibí en la Escuela Normal Dr. Juan Gregorio Pujol donde cursé Primaria y Secundaria. Actualmente estoy estudiando la carrera de Diseño y Programación de Videojuegos en la Universidad de la Cuenca del Plata.</p>
+        <h2>Se manejar las Siguientes Aplicaciones</h2>
+        <p>Se manejar aplicaciones de edición como Photoshop,Substance Painter, Adobe Ilustrator, Sony VEGAS y Premier. También tengo conocimientos en lenguajes de programación como Python y HTML.</p>
+    </div>
+
+    <div id="trabajos-practicos">
+        <h2>Trabajos Prácticos</h2>
+        <div class="gallery">
+            <div class="image">
+                <img src="IMAGENES/trabajo1.jpg" alt="Trabajo 1">
+            </div>
+            <div class="image">
+                <img src="IMAGENES/trabajo2.jpg" alt="Trabajo 2">
+            </div>
+            <div class="image">
+                <img src="IMAGENES/trabajo3.jpg" alt="Trabajo 3">
+            </div>
+        </div>
+    </div>
+
+    <div id="video-proyecto">
+        <h2>Proyecto de Video</h2>
+        <!-- Aquí puedes agregar el video -->
+        <iframe width="560" height="315" src="IMAGENES/trabajo de facu22.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
+

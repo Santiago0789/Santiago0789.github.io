@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos para las redes sociales */
+        .redes-sociales {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .redes-sociales a {
+            display: inline-block;
+            margin: 0 15px; /* Aumenté el margen para separar más los íconos */
+            transition: transform 0.3s ease;
+        }
+
+        .redes-sociales img {
+            width: 80px; /* Aumenté el tamaño de los íconos */
+            height: 80px; /* Ajusté la altura para mantener la proporción */
+            border-radius: 50%;
+        }
+
+        .redes-sociales a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <!--<a href="index.html" class="logo">logo</a> -->
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="IMAGENES/menu.png" class="menu-icono" alt="Menú">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="redes-sociales">
+        <a href="mailto:santigomorales83@gmail.com"><img src="IMAGENES/gmail.png" alt="Gmail"></a>
+        <a href="mailto:54santiagomorales@gmail.com"><img src="IMAGENES/gmail2.png" alt="Gmail 2"></a>
+        <a href="https://instagram.com/santiagoomoraless"><img src="IMAGENES/instagram.png" alt="Instagram"></a>
+        <a href="https://facebook.com/SantiagoMorales"><img src="IMAGENES/facebook.png" alt="Facebook"></a>
+    </div>
+
+</body>
+</html>
+
+

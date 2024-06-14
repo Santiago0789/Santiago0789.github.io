@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="carousel.css"> <!-- Nuevo archivo CSS para el carousel -->
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="IMAGENES/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobremi.html">Sobre mi</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Proyectos</a>
+                            <div class="dropdown-content">
+                                <a href="TopoTopetón/Topoindex.html">Mini juego</a>
+                                <a href="Calculadora/Calculadora.html">Calculadora</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="sec-1">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="IMAGENES/imagen1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="IMAGENES/imagen2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="IMAGENES/imagen3.jpg" style="width:100%">
+            </div>
+
+            <!-- Flechas de navegación -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div> 
+
+    <script src="carousel.js"></script> <!-- Nuevo archivo JavaScript para el carousel -->
+</body>
+</html>
+
+
+
